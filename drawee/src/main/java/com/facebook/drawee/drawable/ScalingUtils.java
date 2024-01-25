@@ -218,7 +218,7 @@ public class ScalingUtils {
       float dx = parentRect.left;
       float dy = parentRect.top;
       outTransform.setScale(scaleX, scaleY);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -245,7 +245,7 @@ public class ScalingUtils {
       float dx = parentRect.left;
       float dy = parentRect.top;
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -272,7 +272,7 @@ public class ScalingUtils {
       float dx = parentRect.left;
       float dy = parentRect.top + (parentRect.height() - childHeight * scale);
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -299,7 +299,7 @@ public class ScalingUtils {
       float dx = parentRect.left + (parentRect.width() - childWidth * scale) * 0.5f;
       float dy = parentRect.top + (parentRect.height() - childHeight * scale) * 0.5f;
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -326,7 +326,7 @@ public class ScalingUtils {
       float dx = parentRect.left + (parentRect.width() - childWidth * scale);
       float dy = parentRect.top + (parentRect.height() - childHeight * scale);
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -351,7 +351,7 @@ public class ScalingUtils {
         float scaleY) {
       float dx = parentRect.left + (parentRect.width() - childWidth) * 0.5f;
       float dy = parentRect.top + (parentRect.height() - childHeight) * 0.5f;
-      outTransform.setTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.setTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -378,7 +378,7 @@ public class ScalingUtils {
       float dx = parentRect.left + (parentRect.width() - childWidth * scale) * 0.5f;
       float dy = parentRect.top + (parentRect.height() - childHeight * scale) * 0.5f;
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -412,7 +412,7 @@ public class ScalingUtils {
         dy = parentRect.top + (parentRect.height() - childHeight * scale) * 0.5f;
       }
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -448,7 +448,7 @@ public class ScalingUtils {
         dy = parentRect.top + Math.max(Math.min(dy, 0), parentRect.height() - childHeight * scale);
       }
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -476,7 +476,7 @@ public class ScalingUtils {
       dx = parentRect.left;
       dy = parentRect.top + (parentRect.height() - childHeight * scale) * 0.5f;
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
@@ -504,7 +504,7 @@ public class ScalingUtils {
       dx = parentRect.left + (parentRect.width() - childWidth * scale) * 0.5f;
       dy = parentRect.top;
       outTransform.setScale(scale, scale);
-      outTransform.postTranslate((int) (dx + 0.5f), (int) (dy + 0.5f));
+      outTransform.postTranslate(Math.round(dx), Math.round(dy));
     }
 
     @Override
